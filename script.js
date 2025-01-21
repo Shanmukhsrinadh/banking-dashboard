@@ -21,7 +21,7 @@ function showLoginPrompt() {
    if (accountNumber && pin) {
        if (accountNumber === "123456789" && pin === "1234") {
            alert("Login successful!");
-           window.location.href = "accountDetails.html"; 
+           window.location.href = "./accountdetails.html"; 
        } else {
            alert("Invalid account number or PIN.");
        }

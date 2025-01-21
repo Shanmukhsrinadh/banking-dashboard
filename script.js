@@ -32,7 +32,8 @@ function showLoginPrompt() {
        // Check if the account number and pin match the correct values
        if (accountNumber === "123456789" && pin === "1234") {
            alert("Login successful!");
-           window.location.href = "accountDetails.html"; 
+           window.location.href = "pages/accountdetails.html";
+
        } else {
            // Show an alert if either the account number or pin is incorrect
            alert("Invalid account number or PIN.");

@@ -6,7 +6,7 @@
 body {
     background: 
         linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(19, 15, 64, 0.7)), 
-        url('../img/background.jpg'); /* Your image path */
+        url('../img/background.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
@@ -19,8 +19,8 @@ body {
 }
 
 .navbar-nav .nav-link {
-    font-size: 1.2rem; /* Adjust size here */
-    font-weight: bold; /* Makes the text bolder */
+    font-size: 1.2rem; 
+    font-weight: bold; 
 }
 
 .navbar-brand {
@@ -28,7 +28,7 @@ body {
     padding-left: 2%;
 }
 
-/* Landing section */
+
 #landinghome {
     display: flex;
     align-items: center;
@@ -37,7 +37,6 @@ body {
     padding-left: 20%;
 }
 
-/* Card container */
 .card-container {
     perspective: 1000px;
     display: flex;
@@ -45,7 +44,7 @@ body {
     align-items: center;
 }
 
-/* Credit card styles */
+
 .credit-card {
     width: 460px;
     height: 260px;

@@ -6,7 +6,7 @@
 body {
     background: 
         linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(19, 15, 64, 0.7)), /* Gradient with opacity */
-        url('img/background.jpg'); /* Your image path */
+        url('../img/background.jpg'); /* Your image path */
     background-size: cover; /* Ensures the image covers the entire body */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Keeps the image fixed as you scroll */
@@ -68,7 +68,7 @@ body {
 }
 
 .card-front {
-    background-image: url('img/card.jpg'); 
+    background-image: url('../img/card.jpg'); 
     opacity: 80%;
     background-size: cover; 
     background-position: center; 
@@ -101,7 +101,7 @@ body {
 }
 
 .card-back {
-    background-image: url('img/card\ 2.jpg'); /* Replace with your image URL */
+    background-image: url('../img/card\ 2.jpg'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
     color: white;

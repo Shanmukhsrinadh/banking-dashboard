@@ -18,14 +18,20 @@ body {
     box-shadow: none;
 }
 
-.navbar-nav .nav-link {
-    font-size: 1.2rem; 
-    font-weight: bold; 
-}
-
 .navbar-brand {
     font-size: 55px; 
     padding-left: 2%;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: aqua;
 }
 
 
@@ -68,7 +74,6 @@ body {
 
 .card-front {
     background-image: url('../img/card.jpg'); 
-    opacity: 80%;
     background-size: cover; 
     background-position: center; 
     color: white;
@@ -252,6 +257,17 @@ body {
     color: #ffffff;
   }
   
+  #creditAmount:hover {
+    border-color: aqua; 
+    background-color: aqua; 
+    color: black;
+  }
+  
+  #debitAmount:hover {
+    border-color: aqua; 
+    background-color: aqua; 
+    color: black;
+  }
   
 
 @media (max-width: 480px) {

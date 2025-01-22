@@ -11,6 +11,8 @@
 // }
 
 
+localStorage.setItems("Avlbal", (document.getElementById(Avlbal)) )
+
 function showLoginPrompt() {
    var modal = document.getElementById('loginModal');
    modal.style.display = 'flex'; 
@@ -43,4 +45,55 @@ function creditWindowbtn() {
 function closeModal() {
   document.getElementById("debitWindowModel").style.display = "none";
   document.getElementById("creditWindowModel").style.display = "none";
+
 }
+
+
+function closeloginModal() {
+  document.getElementById("loginModal").style.display = "none";
+}
+
+
+
+
+
+if (!localStorage.getItem('accountBalance')) {
+  localStorage.setItem('accountBalance', '1000');  
+}
+
+function updateBalanceDisplay() {
+  const balance = localStorage.getItem('accountBalance');
+  document.getElementById('balance').innerText = `$${balance}`;
+}
+
+function creditAdd() {
+  const creditAmount = parseFloat(document.getElementById('creditAmount').value);
+  if (isNaN(creditAmount) || creditAmount <= 0) {
+      alert("Please enter a valid amount to credit.");
+      return;
+  }
+  let currentBalance = parseFloat(localStorage.getItem('accountBalance'));
+  currentBalance += creditAmount;
+  localStorage.setItem('accountBalance', currentBalance);
+  updateBalanceDisplay();
+  alert(`$${creditAmount} credited to your account.`);
+}
+
+function debitAdd() {
+  const creditAmount = parseFloat(document.getElementById('creditAmount').value);
+  if (isNaN(creditAmount) || creditAmount <= 0) {
+      alert("Please enter a valid amount to debit.");
+      return;
+  }
+  let currentBalance = parseFloat(localStorage.getItem('accountBalance'));
+  if (currentBalance < creditAmount) {
+      alert("Insufficient funds.");
+      return;
+  }
+  currentBalance -= creditAmount;
+  localStorage.setItem('accountBalance', currentBalance);
+  updateBalanceDisplay();
+  alert(`$${creditAmount} debited from your account.`);
+}
+
+updateBalanceDisplay();

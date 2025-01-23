@@ -102,3 +102,4 @@ function closeModal() {
  document.getElementById("debitWindowModel").style.display = "none";
  document.getElementById("creditWindowModel").style.display = "none";
 }
+.
